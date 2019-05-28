@@ -1,8 +1,8 @@
 class Triangle
   # write code here
 
-  def self.kind
-    
+  def kind
+
   end
 
   class TriangleError < StandardError
