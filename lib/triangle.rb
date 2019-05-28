@@ -9,7 +9,12 @@ class Triangle
   end
 
   def kind
-
+    self.equilateral = triangle
+    if triangle.class != Triangle
+      raise TriangleError
+    else
+      triangle.equilateral = self
+    end
   end
 
   class TriangleError < StandardError
