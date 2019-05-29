@@ -1,23 +1,25 @@
 class Triangle
-  # write code here
-
-  def initialize(equilateral, isosceles, scalene)
-    @equilateral = equilateral
-    @isosceles = isosceles
-    @scalene = scalene
+  # write code here  
+  def initialize(eq, is , so)
+    @e = eq
+    @i = is 
+    @s = so 
   end
 
-  def equilateral
-    @equilateral
+  def eq
+    @e 
   end
+
+  def is 
+    @i
+  end 
+
+  def so 
+    @s 
+  end 
 
   def kind
-    self.equilateral = triangle
-    if triangle.class != Triangle
-      raise TriangleError
-    else
-      triangle.equilateral = self
-    end
+    
   end
 
   class TriangleError < StandardError
