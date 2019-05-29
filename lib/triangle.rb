@@ -23,9 +23,9 @@ class Triangle
     if eq == is && is == so
       return :equilateral
     elsif eq == is || is == so && eq == so
-      return :isosceles
-    else
       return :scalene
+    else
+      return :isosceles
     end
   end
 
