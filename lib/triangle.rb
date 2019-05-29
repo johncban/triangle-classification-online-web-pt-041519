@@ -22,7 +22,7 @@ class Triangle
     check_tri
     if eq == is && is == so
       return :equilateral
-    elsif eq == is || is == so && eq == so
+    elsif eq == is || is == so || eq == so
       return :isosceles
     else
       return :scalene
