@@ -1,25 +1,25 @@
 class Triangle
-  # write code here  
+  # write code here
   def initialize(eq, is , so)
     @e = eq
-    @i = is 
-    @s = so 
+    @i = is
+    @s = so
   end
 
   def eq
-    @e 
+    @e
   end
 
-  def is 
+  def is
     @i
-  end 
+  end
 
-  def so 
-    @s 
+  def so
+    @s
   end 
 
   def kind
-    
+
   end
 
   class TriangleError < StandardError
