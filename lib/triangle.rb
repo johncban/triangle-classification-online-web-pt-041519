@@ -40,15 +40,19 @@ class Triangle
     end
 
     raise TriangleError if real_t.include?(false)
+=begin
     rescue TriangleError => error
       puts error.message
     end
+=end
   end
 
   class TriangleError < StandardError
+=begin
     def messsage
       "Not Equal!"
-    end  
+    end
+=end
   end
 
 end
