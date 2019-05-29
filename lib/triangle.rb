@@ -30,7 +30,16 @@ class Triangle
   end
 
   def check_tri
+    x = (eq + is > so)
+    y = (eq + so > is)
+    z = (is + so > eq)
 
+    real_t = [x, y, z]
+    [eq, is, so].each do |tr|
+      real_t << false if tr <= 0
+    end
+
+    raise TriangleError if real_t.include?(false)
   end
 
   class TriangleError < StandardError
